@@ -49,6 +49,7 @@ jobs:
       - name: Terraform plan
         working-directory: ${{ inputs.terraform-directory-path }}
         run: |
+          export KUBE_CONFIG_PATH=~/.kube/config
           terraform plan -no-color
 
 
