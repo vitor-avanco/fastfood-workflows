@@ -40,11 +40,6 @@ jobs:
         working-directory: ${{ inputs.terraform-directory-path }}
         run: |
           terraform init
-          
-      - name: Terraform destroy
-        working-directory: ${{ inputs.terraform-directory-path }}
-        run:  | 
-         terraform destroy -auto-approve
 
       - name: Terraform validate
         working-directory: ${{ inputs.terraform-directory-path }}
