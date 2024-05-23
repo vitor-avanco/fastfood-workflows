@@ -28,7 +28,7 @@ jobs:
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v4
         with:
-          role-to-assume: arn:aws:iam::637423281280:role/pipeline
+          role-to-assume: arn:aws:iam::886790807566:role/pipeline
           aws-region: ${{ inputs.aws-region }}
 
       - name: Terraform setup
